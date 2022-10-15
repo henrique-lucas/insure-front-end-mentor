@@ -1,0 +1,69 @@
+.rodape {
+  padding: 50px;
+  background: hsl(0, 0%, 96%) url("../../img/bg-pattern-footer-desktop.svg")
+    no-repeat left top;
+}
+
+.rodape-redes {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--Dark-Grayish-Violet);
+}
+
+.rodape-redes ul {
+  display: flex;
+  gap: 20px;
+}
+
+.rodape-redes svg:hover path {
+  fill: var(--Very-Dark-Violet);
+}
+
+.rodape-listas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.rodape-lista {
+  text-transform: uppercase;
+}
+
+.rodape-titulo-lista {
+  color: var(--Dark-Grayish-Violet);
+  font: 700 1rem "Karla", sans-serif;
+  margin-bottom: 40px;
+}
+
+.rodape-lista-item {
+  font: 700 1rem "Karla", sans-serif;
+  color: var(--Very-Dark-Violet);
+}
+
+.rodape-lista-item a:hover {
+  text-decoration: underline;
+}
+
+.rodape-lista li + li {
+  margin-top: 10px;
+}
+
+.rodape-redes,
+.rodape-listas {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+  .rodape-redes {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .rodape-listas {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center;
+    text-align: center;
+  }
+}

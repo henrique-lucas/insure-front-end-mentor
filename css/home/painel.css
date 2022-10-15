@@ -1,0 +1,47 @@
+.painel {
+  background: url("../../img/bg-pattern-how-we-work-desktop.svg") no-repeat
+    right;
+  background-color: var(--Dark-Violet) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.painel h2 {
+  color: var(--Very-Light-Gray);
+  font: 400 4.5rem/1 "DM Serif Display", serif;
+}
+
+@media (max-width: 1100px) {
+  .painel h2 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .painel h2 {
+    min-width: 13ch;
+  }
+
+  .painel {
+    background: url("../../img/bg-pattern-how-we-work-mobile.svg") no-repeat
+      right;
+    gap: 40px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .painel h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  .painel h2 {
+    font-size: 2.5rem;
+  }
+}

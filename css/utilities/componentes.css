@@ -1,0 +1,36 @@
+/* componentes */
+.conteiner {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  main .conteiner {
+    padding: 0px;
+  }
+}
+
+.btn-primario {
+  color: var(--Very-Dark-Violet);
+  border: 2px solid var(--Very-Dark-Violet);
+  padding: 10px 20px;
+}
+.btn-primario:hover {
+  background-color: var(--Very-Dark-Violet);
+  color: var(--Very-Light-Gray);
+}
+
+.btn-segundario {
+  display: inline-block;
+  color: var(--Very-Light-Gray);
+  border: 2px solid var(--Very-Light-Gray);
+  padding: 10px 20px;
+}
+
+.btn-segundario:hover {
+  background-color: var(--Very-Light-Gray);
+  color: var(--Very-Dark-Violet);
+}
